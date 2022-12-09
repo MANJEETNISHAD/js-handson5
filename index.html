@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Question 1:  Find the Product.</h1>
+    <pre class="para">
+      const Find_Prod = (array, N) => 
+{
+  let pro=1;
+  for(let i=0;i<N;i++){
+    pro*=array[i];
+  }
+   return pro;
+};
+    </pre>
+    <h1>Question 2: Find the Sum. </h1>
+    <pre class="para">
+const Find_Sum = (array, N) => 
+{
+  let sum=0;
+  for(let i=0;i<N;i++){
+    sum+=array[i];
+  }
+   return sum;
+};
+    </pre>
+    <h1>Question 3:Count Occurrences  </h1>
+    <pre class="para">
+const findCount = (N, K, Arr) => 
+{
+  let count=0;
+    for(let i =0;i<N;i++){
+      if(Arr[i]==K){
+        count++;
+      }
+    }
+    return count;
+};
+    </pre>
+    <h1>Question 4: Even Odd </h1>
+    <pre class="para">
+const findEvenOdd = (N, Arr) => 
+{
+  let Brr=[];
+  let evensum=0;
+  let oddsum=0;
+  for(let i=0;i<N;i++)
+  {
+    if(Arr[i]%2===0)
+    {
+      evensum+=Arr[i];
+      
+    }
+    else{
+      oddsum+=Arr[i];
+    }
+  }
+    Brr.push(evensum);
+    Brr.push(oddsum);
+    // Brr[0]=evensum;
+    // Brr[1]=oddsum;
+  return Brr;
+};
+    </pre>
+    <h1>Question 5: Find whether the number is present or not </h1>
+    <pre class="para">
+const Find_Num = (array,N,M) => 
+{
+  let count=0;
+  for(let i=0;i<N;i++){
+    if(array[i]==M){
+      count++;
+    }
+  }
+  if(count>0){
+    return "YES"
+  }
+  else
+  {
+    return "NO"
+  }
+};
+    </pre>
+    <h1>Question 6: Higher Age </h1>
+    <pre class="para">
+const highAge = (N, Arr) => 
+{
+    let brr=[];
+    for(let i=0;i<N;i++){
+      if(Arr[i]>=18){
+        brr.push(Arr[i])
+      }
+    }
+    return brr;
+};
+    </pre>
+    <h1>Question 7: Increment the Array Elements </h1>
+    <pre class="para">
+const Inc_Arr = (array,N) => 
+{
+  let zrr=[];
+for(let i=0;i<N;i++){
+  // zrr.push(array[i]+1);
+  console.log(array[i]+1);
+  
+}  
+// console.log( zrr);
+};
+    </pre>
+    <h1>Question 8: Pass or Fail </h1>
+    <pre class="para">
+const isAllPass = (N, Arr) => 
+{
+  let count=0;
+  for(let i=0;i<N;i++){
+    if(Arr[i]>=32){
+      count++;
+    }
+  }
+  if(count==N){
+    return "YES"
+  }
+  else{
+    return "NO"
+  }
+};
+    </pre>
+    <h1>Question:9 Min and Max</h1>
+    <pre class="para"> function arrayMin(arr) {
+arr.sort(function(a,b){
+  return a-b;
+})
+let min =arr[0];
+return min;
+}
+
+function arrayMax(arr) {
+  let l=arr.length;
+  arr.sort(function(a,b){
+  return a-b;
+})
+let max =arr[l-1];
+return max;
+}</pre>
+</body>
+</html>
